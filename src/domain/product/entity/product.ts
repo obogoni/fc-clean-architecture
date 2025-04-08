@@ -1,4 +1,5 @@
 import ProductInterface from "./product.interface";
+import { ProductType } from "./product.types";
 
 export default class Product implements ProductInterface {
   private _id: string;
@@ -15,13 +16,17 @@ export default class Product implements ProductInterface {
   get id(): string {
     return this._id;
   }
-  
+
   get name(): string {
     return this._name;
   }
 
   get price(): number {
     return this._price;
+  }
+
+  get type(): ProductType {
+    return "a";
   }
 
   changeName(name: string): void {
