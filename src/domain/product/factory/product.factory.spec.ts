@@ -1,3 +1,4 @@
+import ProductB from "../entity/product-b";
 import { ProductType } from "../entity/product.types";
 import ProductFactory from "./product.factory";
 
@@ -16,7 +17,8 @@ describe("Product factory unit test", () => {
 
     expect(product.id).toBeDefined();
     expect(product.name).toBe("Product B");
-    expect(product.price).toBe(2);
+    expect(product.price).toBe(1);
+    expect(product.finalPrice).toBe(2);
     expect(product.constructor.name).toBe("ProductB");
   });
 

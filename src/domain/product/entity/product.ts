@@ -1,3 +1,4 @@
+import ProductB from "./product-b";
 import ProductInterface from "./product.interface";
 import { ProductType } from "./product.types";
 
@@ -24,6 +25,10 @@ export default class Product implements ProductInterface {
   get price(): number {
     return this._price;
   }
+
+  get finalPrice(): number {
+    return this._price;
+  };
 
   get type(): ProductType {
     return "a";

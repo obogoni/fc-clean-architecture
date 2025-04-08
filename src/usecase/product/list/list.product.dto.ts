@@ -4,7 +4,6 @@ export type Product =
     name: string;
     price: number;
     type: string;
-
   }
 
 export interface OutputListProductDto {
